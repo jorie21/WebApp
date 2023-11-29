@@ -1,0 +1,96 @@
+body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+.whole-container{
+  display: flex;
+}
+.left-container{
+  height: 870px;
+  width: 50%;
+  background: linear-gradient(to top, rgb(51, 70, 243), violet);
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.left-container h1{
+    position: absolute;
+    color: lavender;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 3%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    top: 20%;
+}
+.left-container img{
+  margin-top: 30%;
+  width: 70%;
+  height: 60%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.226);
+}
+.right-container{
+  display: flex;
+  justify-content: center;
+  margin-left: 9%;
+  margin-top: 10%;
+}
+
+.Login-form{
+  display: flex;
+  flex-direction: column;
+}
+.pass{
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+label {
+  display: flex;
+  align-items: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.Login-form h1{
+  color: white ;
+  font-family: Geneva, Tahoma, sans-serif;
+  text-shadow: 2px 2px 4px rgb(0, 0, 0);
+  margin-bottom: 100px;
+  margin-left: 10%;
+  
+}
+.right-container input{
+  width: 130%;
+  height: 50px;
+  padding: 5px 20px 5px 20px;
+  border-radius: 10px;
+}
+input[type="checkbox"] {
+  margin-top: 10px;
+  height: 20px;
+  width: 20px;
+  vertical-align: middle;
+  opacity: 0.9;
+}
+.button{
+  margin-top: 60px;
+  margin-left: 5%;
+  background: rgb(57, 164, 252);
+  border: none;
+  color: white;
+  border-radius: 20px;
+  height: 40px;
+  transition: 0.7s;
+}
+.button:hover{
+  transform: scale(0.90);
+  background-color: #5ab9ea;
+}
+
+p a{
+  
+  margin-left: 3px;
+  color: rgb(0, 153, 255);
+}
+p{
+  margin-left: 150px;
+}

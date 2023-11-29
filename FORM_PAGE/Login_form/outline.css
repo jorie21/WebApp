@@ -1,0 +1,241 @@
+*{
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  margin: 0;
+  padding: 0;
+  height: auto;
+  width: auto;
+  background: linear-gradient(to right, #6875eb, #e98fe9, #eeaa82);
+}
+.whole-container{
+  display: flex;
+}
+.banner{
+  background: #251a274d;
+  box-shadow: 0 8px 32px 0 #1f26875e;
+  backdrop-filter: blur( 20px );
+  -webkit-backdrop-filter: blur( 20px );
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 90px;
+  width: 100%;
+  z-index: 1000;
+}
+
+.banner-title{
+  padding: 10px;
+  margin: 10px;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+.banner-selection a{
+  margin: 20px;
+  font-size: 20px;
+}
+.banner-title h1{
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    margin-left: 50px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+nav .banner-selection a{
+  position: relative;
+  width: 0;
+  transition: color 0.5s;
+}
+nav .banner-selection a:hover{
+  color: rgb(192, 222, 247);
+}
+nav .banner-selection a::after{
+  content: ""; 
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0; 
+  border-bottom: 2px solid aqua; 
+  transition: width 0.8s;
+}
+nav .banner-selection a:hover::after{
+  width: 100%;
+}
+
+.users{
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-align: center;
+  margin: 20px;
+  width: auto;
+  height: auto;
+  justify-content: center;
+}
+
+.users button {
+  cursor: pointer;
+  border: 0;
+  border-radius: 10px;
+  font-weight: 600;
+  margin: 0 10px;
+  width: 100px;
+  padding: 10px 0;
+  box-shadow: 0 0 20px #6855e033;
+  transition: 0.5s;
+}
+
+.reg {
+  color: white;
+  background-color: #6855e0;
+}
+
+.log {
+  color: #6855e0;
+  background-color: #ffffff;
+  border: 1px solid #6855e0;
+}
+
+.users button:hover {
+  color: white;
+  width: 120px; 
+  box-shadow: 0 0 20px #6855e099;
+  background-color: #6855e0;
+}
+.left-container{
+  width: 50%;
+  margin-left: 70px;
+}
+.left-container h1{
+  font-size: 90px;
+  color: lavenderblush;
+  color: transparent;
+  -webkit-text-stroke: 2px white;
+  text-shadow: 2px 2px 4px rgba(104, 117, 235, 0.5), 4px 4px 6px rgba(233, 143, 233, 0.5), 6px 6px 8px rgba(238, 170, 130, 0.5);
+  font-weight: bold;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.left-container h1:after {
+  content: "anywhere and anytime";
+  display: block;
+  color: white; 
+}
+.left-container p{
+  width: 90%;
+  color: antiquewhite;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 15px;
+}
+.left-container button{
+  margin-top: 40px;
+  height: 45px;
+  background-color: transparent;
+  border: 4px solid white;
+  color: white;
+  padding: 10px 50px;
+  border-radius: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.7s;
+  font-weight: bolder;
+}
+.left-container button:hover{
+  transform: scale(0.8s);
+  background-color: rgb(0, 109, 252);
+}
+.right-container {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+.right-container img{
+  margin-top: 15%;
+  height: 70%;
+}
+.bottom{
+  display: flex;
+  margin-top: 15%;
+}
+.aboutus {
+  height: auto;
+  width: 55%;
+  margin-left: 70px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  transition: 1s;
+  padding: 0px 20px 0px 20px;
+}
+
+.aboutus:hover {
+  transform: scale(1.1);
+}
+
+.aboutus h1 {
+  color: whitesmoke;
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 80px;
+  text-shadow: 2px 2px 4px rgba(104, 117, 235, 0.5), 4px 4px 6px rgba(233, 143, 233, 0.5), 6px 6px 8px rgba(238, 170, 130, 0.5);
+}
+
+
+.aboutus p {
+  text-align: justify;
+  text-decoration: dashed;
+  font-size: 20px;
+  font-family:  "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  color: whitesmoke;
+}
+
+.photo{
+  width: 36%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.photo img{
+  height: 85%;
+  margin-left: 10%;
+}
+
+.contact-info-container{
+  width: 100%;
+  background-color: white;
+  height: 400px;
+  margin-top: 5%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.contact-info h1{
+    margin-left: 40%;
+    position: absolute;
+    margin-top: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: 2px 2px 4px rgba(104, 117, 235, 0.5), 4px 4px 6px rgba(233, 143, 233, 0.5), 6px 6px 8px rgba(238, 170, 130, 0.5);
+}
+.contact-logo{
+  display: flex;
+  justify-content: center;
+}
+.contact-logo img {
+  display: flex;
+  height: 100px;
+  width: 100px;
+  margin-top: 120px;
+  margin: 145px 50px; 
+}
+.copyright-container p{
+    text-align: center;
+    font-size: 15px;
+}
