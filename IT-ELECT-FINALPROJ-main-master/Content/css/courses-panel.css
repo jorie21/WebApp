@@ -1,0 +1,210 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+    height: auto;
+    width: auto;
+    color: white;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #6875eb, #e98fe9, #eeaa82);
+}
+
+.banner {
+    background: #251a274d;
+    box-shadow: 0 8px 32px 0 #1f26875e;
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 90px;
+    width: 100%;
+    z-index: 1000;
+    position: fixed;
+}
+
+.banner-title{
+    padding: 10px;
+    margin: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.banner-selection a{
+    margin: 20px;
+    font-size: 20px;
+}
+
+.banner-title h1{
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    margin-left: 50px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+nav .banner-selection a{
+    position: relative;
+    width: 0;
+    transition: color 0.5s;
+}
+nav .banner-selection a:hover{
+    color: rgb(192, 222, 247);
+}
+nav .banner-selection a::after{
+    content: ""; 
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0; 
+    border-bottom: 2px solid aqua; 
+    transition: width 0.8s;
+}
+nav .banner-selection a:hover::after{
+    width: 100%;
+}
+
+.users{
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    margin: 20px;
+    margin-right: 50px;
+    width: auto;
+    height: auto;
+    justify-content: center;
+  }
+  
+.users button {
+    cursor: pointer;
+    border: 0;
+    border-radius: 10px;
+    font-weight: 600;
+    margin: 0 10px;
+    width: 100px;
+    padding: 10px 0;
+    box-shadow: 0 0 20px #6855e033;
+    transition: 0.5s;
+}
+  
+.users button:hover {
+    color: white;
+    width: 120px; 
+    box-shadow: 0 0 20px #6855e099;
+    background-color: #6855e0;
+}
+
+.courses{
+    padding: 100px 30px 30px 30px;
+    
+}
+
+.featured-courses{
+    margin-left: 40px;
+    
+}
+
+.courses h1{
+    text-shadow: 4px 3px 6px rgba(149, 155, 240, 0.404);
+    font-size: 40px;
+    
+}
+
+.courses p{
+    font-weight: 600;
+    line-height: 24px;
+    font-size: 20px;
+    
+}
+
+.course{
+    margin: 40px 40px 80px 40px; 
+    height: auto;
+    width: auto;
+    padding: 25px;
+    box-shadow: 0 8px 32px 0 rgba(149, 155, 240, 0.404);
+    border-radius: 20px;
+    border: 0;
+}
+
+.math{
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+                url('../../image/math.gif');
+    background-repeat: no-repeat;
+    background-size: 208vh auto;
+    background-position: center center;
+    width: auto;
+    height: auto;
+}
+
+.english{
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                url('../../image/english.gif');
+    background-repeat: no-repeat;
+    background-size: 208vh auto;
+    background-position: center center;
+    width: auto;
+    height: auto;
+}
+
+.science{
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+                url('../../image/science.gif');
+    background-repeat: no-repeat;
+    background-size: 208vh auto;
+    background-position: center center;
+    width: auto;
+    height: auto;
+}
+
+.learn-button{
+    margin-top: 30px;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.learn-button button{
+    cursor: pointer;
+    border: 0;
+    border-radius: 20px;
+    font-weight: 700;
+    margin: 0 10px;
+    width: 150px;
+    height: 40px;
+    padding: 10px 0;
+    box-shadow: 0 0 20px #6755e0be;
+    transition: 0.5s;
+}
+
+.learn-button button:hover{
+    width: 180px;
+    height: 50px;
+    background-color: rgba(0, 255, 255, 0.507);
+}
+
+/* Scroll Bar Design */
+::-webkit-scrollbar {
+    width: 7px; 
+    background: wheat;
+}
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to top, #d1b0e7, #75385a );
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to bottom, #dd83ca, #462034 );
+}
+

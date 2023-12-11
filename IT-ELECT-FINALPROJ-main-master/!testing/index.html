@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom PDF Viewer</title>
+    <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #e0e0e0; /* Set the background color of the page */
+            color: #333; /* Set the text color of the page */
+        }
+
+        #pdf-viewer {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            overflow: hidden;
+            background-color: white; /* Set the background color of the PDF viewer */
+        }
+
+        #toolbar {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #pdf-container {
+            flex: 1;
+            overflow: auto;
+        }
+
+        canvas {
+            display: block;
+            margin: 0 auto;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div id="pdf-viewer">
+        <div id="toolbar">
+            <button id="prev-page">Previous</button>
+            <div>
+                <span id="page-num">Page 1</span> / <span id="page-count">1</span>
+            </div>
+            <button id="next-page">Next</button>
+        </div>
+        <div id="pdf-container"></div>
+    </div>
+
+    <script>
+        // Set the PDF file path
+        const pdfUrl = 'yourfile.pdf';
+
+        // Rest of the JavaScript code...
+    </script>
+</body>
+</html>
